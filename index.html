@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Zumbis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Vídeo de background -->
+    <div class="video-background">
+      <video autoplay muted loop id="bgVideo">
+        <source src="/images//backvideo.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+    </div>
+
+    <div class="container">
+      <h1>Programação dos Zumbis 🧟‍♂️</h1>
+      <p class="description">Ajude os zumbis codificadores a calcular a sequência Fibonacci!</p>
+
+      <div class="input-group">
+        <label for="fibonacciInput">Quantidade de termos:</label>
+        <input type="number" id="fibonacciInput" min="1" placeholder="Digite um número" />
+      </div>
+
+      <div class="button-group">
+        <button id="calculateBtn" class="neon-btn">CALCULAR</button>
+        <button id="backBtn" class="neon-btn">VOLTAR</button>
+      </div>
+      <br />
+      <br />
+      <div class="result-container">
+        <h2>Resultado</h2>
+        <div id="calculationSteps" class="calculation-steps"></div>
+        <div id="resultOutput" class="result-output"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
